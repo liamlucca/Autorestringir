@@ -22,8 +22,8 @@ DECRYPTED_INFO_FILE = "info_desencriptada.txt"  # Archivo con contenido desencri
 # APIs para obtener la fecha (en orden de prioridad)
 API_ENDPOINTS = [
     {"url": "http://worldtimeapi.org/api/timezone/Etc/UTC", "key": None, "format": "worldtime"},
+    #{"url": "http://api.timezonedb.com/v2.1/get-time-zone?key=[INSERT_KEY_HERE]&format=json&by=zone&zone=UTC", "key": "[INSERT_KEY_HERE]", "format": "timezonedb"}, # desactivada porque lleva una key que se consigue en timezonedb.com
     {"url": "http://worldclockapi.com/api/json/utc/now", "key": None, "format": "worldclock"},
-    #{"url": "http://api.timezonedb.com/v2.1/get-time-zone?key=[INSERT_KEY_HERE]&format=json&by=zone&zone=UTC", "key": "[INSERT_KEY_HERE]", "format": "timezonedb"},
 ]
 
 # Función para obtener la fecha y hora real desde múltiples APIs
